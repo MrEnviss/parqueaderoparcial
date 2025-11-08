@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrador</title>
+</head>
+<body>
+<h2>Registrar Vehículo</h2>
+<form id="registroForm">
+    <input type="text" name="placa" placeholder="Placa" required>
+    <input type="text" name="marca" placeholder="Marca" required>
+    <input type="text" name="modelo" placeholder="Modelo" required>
+    <input type="text" name="color" placeholder="Color" required>
+    <input type="text" name="ubicacion" placeholder="Ubicación" required>
+    <select name="idTipoVehiculo" required>
+        <option value="1">Carro</option>
+        <option value="2">Moto</option>
+        <option value="3">Camioneta</option>
+    </select>
+    <button type="submit">Registrar</button>
+</form>
+
+<h2>Vehículos Registrados</h2>
+<div id="listaVehiculos"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
